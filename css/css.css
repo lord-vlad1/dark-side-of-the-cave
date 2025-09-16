@@ -1,0 +1,776 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #111111;
+    margin: 0;
+	font-family: "creepster";
+	font-size: 26px;
+}
+
+.container-top {
+    max-width: 1200px;
+	margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+	box-sizing: border-box;
+	z-index: 1;
+	position: relative;
+}
+
+.banner-bg {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.slider {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.slide {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.logo {
+	width: 200px;
+	height: 129px;
+	background-image: url(../img/containers/logo_pap.png);
+	background-size: cover;
+	margin-top: 40px;
+}
+
+.telefone-informacao {
+	display: inline-block;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin-right: 10px;
+	color: white;
+	margin-top: 50px;
+	margin-left: 30px;
+	float: left;
+	transition: 0.5s;
+}
+
+li:first-child {
+	margin-left: 0;
+}
+
+li:hover {
+	color: #FF0000;
+	cursor: pointer;
+}
+
+.slogan {
+	font-size: 35px;
+	color: white;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btt_dropbox {
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 15px 32px;
+	font-size: 25px;
+	margin-top: 15px;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	border-radius: 25px;
+	transition: 0.5s;
+}
+
+.btt_dropbox:hover {
+	background-color: red;
+
+}
+
+.header2 {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	top: 60%;
+	transform: translateY(-50%);
+}
+
+.mao {
+	background-image: url(../img/slider/mobile%20with%20hand%202.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	width: 30%;
+	height: 75%;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+.body-container {
+	max-width: 1200px;
+	margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+	box-sizing: border-box;
+	margin-top: 100px;
+	display: flex;
+	
+}
+
+.date-square-black {
+	background-color: black;
+	border: none;
+	padding: 10px 26px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 56px;	
+	color: white;
+	vertical-align: middle;
+}
+
+.date-square-red {
+	background-color: #D90000;
+	border: none;
+	padding: 9px 26px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	height: 40px;
+	color: white;
+	vertical-align: middle;
+}
+
+.date-square-blood {
+	background-image: url(../img/containers/blood-no.fw.png);
+	width: 170px;
+	height: 188px;
+	background-size: cover;
+	margin-top: -11px;
+}
+
+.sobre-o-jogo {
+	margin-right: 70px;
+	margin-left: 70px;	
+}
+
+.sobre-o-jogo p {
+	color: #D90000 ;
+	font-size: 32px;
+}
+
+.texto-jogo {
+	color: white;
+	font-size: 26px;
+	line-height: 1.8;
+}
+
+.calendario {
+	display: flex;
+	flex-direction: column;
+}
+
+.caracteristicas {
+	background-color: black;
+	border: none;
+	padding: 13px 40px;
+	text-align: left;
+	color: white;
+	margin-top: 25px;
+}
+
+.caracteristicas1 {
+	background-color: grey;
+	border: none;
+	padding:13px 40px;
+	text-align: left;
+	color: black;
+	margin-top: 25px;
+	font-size: 16px;
+	font-family: "Carme";
+}
+
+.caracteristicas1 .fa, .fas {
+	margin-right: 10px;
+}
+	
+
+
+
+/* Prints jogo */
+
+.prints-jogo {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.prints-jogo .print {
+	position: relative;
+	width: 20%;
+}
+
+.prints-jogo .print .moldura {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.prints-jogo .print .imagem {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	bottom: 20px;
+	left: 15px;
+	z-index: 0;
+	background-size: cover;
+}
+
+.container-prints {
+	max-width: 1200px;
+	margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+	box-sizing: border-box;	
+}
+
+.print {
+	transition: transform .2s;
+}
+
+.print:hover {
+	transition: transform .2s;
+	transform: scale(1.2);
+}
+
+.container-quem-somos {
+	max-width: 1200px;
+	margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+	box-sizing: border-box;	
+}
+
+.cruz-titulo {
+	display: flex;
+	flex-direction: row;
+}
+
+.quem-somos {
+	background-color: #222222;
+	width: 100%;
+	margin-top: 100px;
+	padding-bottom: 50px;
+}
+
+.cruz-img {
+	width: 120px;
+	height: 182px;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+.quem-somos-titulo {
+	color: #D90000;
+	font-size: 50px;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+.texto-quem-somos {
+	color: white;
+	font-size: 16px;
+	margin-left: 242px;
+	margin-top: -40px;
+	line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.preto-download-jogo {
+	margin-top: 100px;
+	background-color: black;
+	width: 100%;
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.titulo-download {
+	font-size: 40px;
+}
+
+.btt_dropbox2 {
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 15px 32px;
+	font-size: 25px;
+	margin-top: 15px;
+	cursor: pointer;	
+	display: inline-block;
+	color: white;
+	border-radius: 25px;
+	transition: 0.5s;
+}
+
+.btt_dropbox2:hover {
+	background-color: #D90000;
+
+}
+
+.sonic {
+	background-image: url(../img/containers/sonic.fw.png);
+	position: absolute;
+	left: 10px;
+	bottom: -50px;
+	width: 280px;
+	height: 269px;
+	background-size: cover;
+}
+
+.samara {
+	background-image: url(../img/containers/samara.fw.png);
+	position: absolute;
+	right: 10px;
+	bottom: -100px;
+	width: 150px;
+	height: 399px;
+	background-size: cover;
+	margin-right: 60px;
+}
+
+.container-download {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+	box-sizing: border-box;	
+}
+
+.img-lapide {
+	background-image: url(../img/containers/lapide.fw.png);
+	width: 110px;
+	height: 131px;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+.contactos-txt {
+	color: #D90000;
+	font-size: 50px;
+	margin-left: 105px;
+	margin-top: 85px;
+}
+
+.entrar-contato {
+	color: white;
+	font-size: 37px;
+	margin-top: 30px;
+	text-align: center;
+	margin-right: 131px;
+}
+
+.container-contatos {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.gamepad-icon {
+	background-image: url(../img/containers/gamepad-icon.fw.png);
+	width: 16px;
+	height: 16px;
+}
+
+.todos-gamepad-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.container-form {
+    max-width: 1200px;
+	margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+	box-sizing: border-box;		
+	margin-top: 50px;
+}
+
+.formulario-email form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.formulario-email input[type=text] {
+	width: 31.333%;
+	height: 49px;
+	background-color: transparent;
+	color: white;
+	font-size: 16px;
+	display: inline-block;
+	border: 2px solid white;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin: 8px 0;
+	padding: 10px;
+	margin-left: 3%;
+	font-family: "Carme";
+}
+
+.formulario-email input[type=text]:first-child {
+	margin-left: 0;
+}
+
+.formulario-mensagem {
+	width: 100%;
+}
+
+.formulario-mensagem textarea[type=text] {
+	width: 100%;
+	height: 244px;
+	margin-top: 15px;
+	background-color: transparent;
+	font-size: 16px;
+	display: inline-block;
+	color: white;
+	border: 2px solid white;
+	border-radius: 4px;
+	margin: 8px 0;
+	padding: 10px;
+	font-family: "Carme";
+	transition: 0.5s;
+	
+}
+
+.formulario-mensagem textarea[type=text]:focus {
+	border: 2px solid #D90000;
+	transition: 0.5s;
+}
+
+.formulario-email input[type=submit]{
+	width: 350px;
+	height: 66px;
+	background-color: grey;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	border: none;
+	margin: 0 auto;
+	display: block;
+	font-family: "creepster";
+	margin-top: 10px;
+	transition: 0.5s;
+}
+
+.formulario-email input[type=submit]:hover{
+	background-color: #D90000;
+	outline: none;
+}
+
+.formulario-email input[type=text]:focus {
+	border: 2px solid #D90000;
+	transition: 0.5s;
+}
+
+.container-informacao {
+	width: 100%;
+	box-sizing: border-box;		
+	background-color: #666666;
+	height: 300px;
+	margin-top: 150px;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+::placeholder {
+	color: white;
+}
+
+.texto-informacao {
+	display: block;
+	justify-content: space-evenly;
+	color: black;
+	padding-top: 110px;
+	align-items: center;
+	transition: 0.5s;
+}
+.text-email {
+	transition: 0.5s;
+}
+
+.text-email:hover {
+	color: #D90000;
+	cursor: pointer;
+}
+
+.esqueleto {
+	background-image: url(../img/containers/sketelon.png);
+	width: 150px;
+	height: 181px;
+	background-size: cover;
+	position: absolute;
+	left: 60px;
+	top: 50px;
+	margin-left: 60px;
+}
+
+.teia {
+	background-image: url(../img/containers/teia-aranha.png);
+	width: 200px;
+	background-size: cover;
+	height: 192px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	pointer-events: none;
+	margin-right: 0px;
+}
+
+.footer {
+	background-color: black;
+	width: 100%;
+	height: 200px;
+}
+
+.container-footer {
+	max-width: 1200px;
+	margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+	box-sizing: border-box;	
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-copyright {
+	color: white;
+	font-size: 15px;
+	margin-top: 100px;
+	margin-bottom: 0px;
+}
+
+.social-media {
+	display: flex;
+	margin-top: 90px;
+}
+.instagram-icon {
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/containers/instagram.fw.png);
+	margin-right: 10px;
+	transition: 0.5s;
+}
+
+.instagram-icon:hover {
+	background-image: url(../img/containers/instagram-red.fw.png);
+	cursor: pointer;
+}
+
+.facebook-icon {
+	background-image: url(../img/containers/facebook.fw.png);
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 30px;
+	transition: 0.5s;
+}
+
+.facebook-icon:hover {
+	background-image: url(../img/containers/facebook-red.fw.png);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.youtube-icon {
+	background-image: url(../img/containers/youtube.fw.png);
+	width: 37px;
+	height: 28px;
+	margin-right: 10px;
+	transition: 0.5s;
+}
+
+.youtube-icon:hover {
+	background-image: url(../img/containers/youtube-icon.fw.png);
+	cursor: pointer;	
+}
+
+.skype-icon {
+	background-image: url(../img/containers/skype.fw.png);
+	width: 29px;
+	height: 30px;
+	transition: 0.5s;
+}
+
+.skype-icon:hover {
+	background-image: url(../img/containers/skype-red.fw.png);
+	cursor: pointer;
+}
+
+.email-icon {
+	margin-right: 5px;
+}
+
+.menu-toggle {
+	color: white;
+	margin-top: 35px;
+	margin-right: 15px;
+	font-size: 40px;
+	
+}
+
+.menu-toggle:hover {
+	color: #D90000;
+}
+
+
+/*responsive menu*/
+
+@media (min-width:851px) {
+	.menu-toggle {
+		display: none;
+	}
+}
+
+@media (max-width:850px) {
+	.header {
+		align-items: flex-start;
+	}
+	.menu {
+		display: none;
+		position: absolute;
+		background-color: black;
+		padding: 15px;
+		right: 0;
+		top: 80px;
+		margin-right: 10px;
+		border-radius: 5px; 
+	}
+	.menu li {
+		float: none;
+		margin: 30px 0px;
+	}
+	.body-container {
+		display: block;
+	}
+	.sobre-o-jogo {
+		margin-top: 30px;
+		margin-right: 30px;
+    	margin-left: 30px;
+	}
+	.texto-jogo {
+		font-size: 18px;
+	}
+	.prints-jogo {
+		display: block;
+	}
+	.prints-jogo .print {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		max-width: 300px;
+	}
+	.prints-jogo .print:last-child {
+		margin-bottom: 0;
+	}
+	.cruz-titulo {
+		display: block;
+		text-align: center;
+	}
+	.texto-quem-somos {
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.quem-somos-titulo {
+		margin-left: 0;
+		font-size: 45px;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.cruz-img {
+		margin-left: 0;
+	}
+	.titulo-download {
+		font-size: 30px;
+	}
+	.sonic {
+		display: none;
+	}
+	.samara {
+		display: none;
+	}
+	.caracteristicas1 {
+		font-size: 12px;
+		padding: 13px 5px;
+	}
+	.img-lapide {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contactos-txt {
+		text-align: center;
+		margin-left: 0;
+	}
+	.entrar-contato {
+		margin-right: 0;
+	}
+	.esqueleto {
+		display: none;
+	}
+	.teia {
+		display: none;
+	}
+	.container-footer {
+		display: block;
+	}
+	.text-copyright {
+		padding-top: 60px;
+		text-align: center;
+		margin-top: 0;
+	}
+	.social-media {
+		margin-top: 40px;
+		justify-content: center;
+	}
+	.email-informacao {
+		margin-top: 20px;
+	}
+	.texto-informacao {
+		padding-top: 95px;
+	}
+	.formulario-email input[type=text] {
+		width: 100%;
+		margin-left: 0;
+	}
+	.calendario {
+		width: 170px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+	.mao {
+		display: none;
+	}
+}
+/*fim responsive menu*/
