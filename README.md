@@ -10,7 +10,7 @@ Features
 
 🛠️ Backoffice for managing website content
 
-💻 Built with PHP, CSS, and JavaScript
+💻 Built with HTML, PHP, CSS.
 
 Purpose
 
